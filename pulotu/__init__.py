@@ -1,11 +1,15 @@
+import functools
+
 from pyramid.config import Configurator
 
 from clld.interfaces import IMapMarker, IValueSet, IValue, IDomainElement
 from clld.web.icon import MapMarker
+from clld.web.app import menu_item
 from clldutils.svg import pie, icon, data_url
 
 # we must make sure custom models are known at database initialization!
 from pulotu import models
+from pulotu import views
 
 _ = lambda s: s
 _('Language')
@@ -39,8 +43,15 @@ def main(global_config, **settings):
     config.include('clld.web.app')
 
     config.include('clldmpg')
+    config.register_menu(
+        ('dataset', functools.partial(menu_item, 'dataset', label='Home')),
+        ('about', functools.partial(menu_item, 'about', label='About')),
+        ('languages', functools.partial(menu_item, 'languages', label='Cultures')),
+        ('parameters', functools.partial(menu_item, 'parameters', label='Compare Cultures')),
+        ('glossary', functools.partial(menu_item, 'glossary', label='Glossary')),
+    )
 
-
+    config.add_route_and_view('glossary', '/glossary', views.glossary, renderer='glossary.mako')
     config.registry.registerUtility(LanguageByFamilyMapMarker(), IMapMarker)
 
     return config.make_wsgi_app()

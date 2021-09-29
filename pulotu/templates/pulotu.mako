@@ -28,7 +28,6 @@
     </style>
 </%block>
 
-
 ##
 ## define app-level blocks:
 ##

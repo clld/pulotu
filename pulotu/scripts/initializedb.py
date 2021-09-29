@@ -125,6 +125,9 @@ def main(args):
 
     refs = collections.defaultdict(list)
 
+    for row in args.cldf.iter_rows('glossary.csv', 'id', 'name', 'description'):
+        DBSession.add(common.Config(key=row['name'], value=row['description']))
+
     for param in args.cldf.iter_rows('ParameterTable', 'id', 'name'):
         data.add(
             models.Feature,

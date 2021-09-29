@@ -1,0 +1,111 @@
+
+@font-face {
+	font-family:BerlinSansDemi;
+	src:url("fonts/BRNLSDB.eot");
+	src:url("fonts/BRNLSDB.eot#iefix") format("embedded-opentype"),
+		url("fonts/BRLNSDB.woff") format("woff"),
+		url("fonts/BRLNSDB.TTF") format("truetype"),
+		url("fonts/BRLNSDB.svg#svgFontName") format("svg");
+}
+
+@font-face {
+	font-family:BerlinSansReg;
+	src:url("fonts/BRLNSR.eot");
+	src:url("fonts/BRLNSR.eot#iefix") format("embedded-opentype"),
+		url("fonts/BRLNSR.woff") format("woff"),
+		url("fonts/BRLNSR.TTF") format("truetype"),
+		url("fonts/BRLNSR.svg#svgFontName") format("svg");
+}
+
+@font-face {
+    font-family:FranklinGothicBook;
+    src: url("fonts/frabk-webfont.ttf") format("truetype");
+}
+
+body {
+    font-family: FranklinGothicBook, sans-serif;
+}
+
+h2 {
+	font-family: BerlinSansDemi, sans-serif !important;
+	text-transform:uppercase;
+	color: #321f10;
+}
+
+#header {
+	padding-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 50px !important;
+}
+
+#header img.logo {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+
+.logo {
+	float:left;
+}
+
+#header .logo-title {
+	padding-top: 10px;
+	font-family:BerlinSansDemi, sans-serif;
+	text-transform:uppercase;
+	margin-top:0;
+	color: #321f10;
+	letter-spacing:8.5px;
+	font-size:50px !important;
+}
+
+.logo-text, h3 {
+text-transform:uppercase;
+	font-family:BerlinSansDemi, sans-serif !important;
+	font-size:15px;
+	letter-spacing:0px;
+	color: #757575;
+	line-height:5px;
+	opacity:1;
+}
+
+div.span12 h2 {
+	text-transform:uppercase;
+	color:#321f10;
+	font-family: BerlinSansDemi, sans-serif;
+	line-height:normal;
+	margin-top: 10px;
+	text-align:center;
+	font-size: 40px !important;
+	letter-spacing:7px;
+}
+
+#title-page {
+	text-align:center;
+	margin-top: 10px;
+}
+
+#title-page img {
+}
+
+#title-page h2 {
+	text-transform:uppercase;
+	color:#321f10;
+	font-family: BerlinSansDemi, sans-serif;
+	font-size:75px !important;
+	text-align:center;
+	letter-spacing:25px;
+	line-height:normal;
+}
+#title-page h3 {
+	font-size:23px !important;
+	text-transform:uppercase;
+	font-family:BerlinSansDemi, sans-serif;
+	color:#757575;
+	letter-spacing:1.5px;
+	margin-top:5px;
+	margin-left:-23px;
+}
+#title-page p.lead {
+	margin-top: 20px !important;
+}

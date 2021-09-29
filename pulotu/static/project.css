@@ -1,27 +1,3 @@
-
-@font-face {
-	font-family:BerlinSansDemi;
-	src:url("fonts/BRNLSDB.eot");
-	src:url("fonts/BRNLSDB.eot#iefix") format("embedded-opentype"),
-		url("fonts/BRLNSDB.woff") format("woff"),
-		url("fonts/BRLNSDB.TTF") format("truetype"),
-		url("fonts/BRLNSDB.svg#svgFontName") format("svg");
-}
-
-@font-face {
-	font-family:BerlinSansReg;
-	src:url("fonts/BRLNSR.eot");
-	src:url("fonts/BRLNSR.eot#iefix") format("embedded-opentype"),
-		url("fonts/BRLNSR.woff") format("woff"),
-		url("fonts/BRLNSR.TTF") format("truetype"),
-		url("fonts/BRLNSR.svg#svgFontName") format("svg");
-}
-
-@font-face {
-    font-family:FranklinGothicBook;
-    src: url("fonts/frabk-webfont.ttf") format("truetype");
-}
-
 body {
     font-family: FranklinGothicBook, sans-serif;
 }

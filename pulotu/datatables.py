@@ -2,9 +2,6 @@ from sqlalchemy.orm import joinedload
 from clld.web import datatables
 from clld.web.datatables.base import LinkCol, Col, LinkToMapCol
 
-from clld_glottologfamily_plugin.models import Family
-from clld_glottologfamily_plugin.datatables import FamilyCol
-
 
 from pulotu import models
 
@@ -12,13 +9,9 @@ from pulotu import models
 
 
 class Languages(datatables.Languages):
-    def base_query(self, query):
-        return query.join(Family).options(joinedload(models.Variety.family)).distinct()
-
     def col_defs(self):
         return [
             LinkCol(self, 'name'),
-            FamilyCol(self, 'Family', models.Variety),
             Col(self,
                 'latitude',
                 sDescription='<small>The geographic latitude</small>'),

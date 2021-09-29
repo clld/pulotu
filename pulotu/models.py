@@ -19,8 +19,6 @@ from clld import interfaces
 from clld.db.meta import Base, CustomModelMixin
 from clld.db.models import common
 
-from clld_glottologfamily_plugin.models import HasFamilyMixin
-
 
 #-----------------------------------------------------------------------------
 # specialized common mapper classes
@@ -78,7 +76,7 @@ def valsort(vs):
 
 
 @implementer(interfaces.ILanguage)
-class Variety(CustomModelMixin, common.Language, HasFamilyMixin):
+class Variety(CustomModelMixin, common.Language):
     pk = Column(Integer, ForeignKey('language.pk'), primary_key=True)
     glottocode = Column(Unicode)
 

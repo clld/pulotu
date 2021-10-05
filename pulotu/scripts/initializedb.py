@@ -81,6 +81,12 @@ class ColorMap:
         ])
 
 
+def index(items, item, default=100):
+    if items == models.SECTIONS and item.endswith('Time Focus'):
+        return -1
+    return items.index(item) if item in items else default
+
+
 def main(args):
     data = Data()
     data.add(
@@ -88,7 +94,8 @@ def main(args):
         pulotu.__name__,
         id=pulotu.__name__,
         domain='pulotu.org',
-
+        name="Pulotu",
+        description="Database of Pacific Religions",
         publisher_name="Max Planck Institute for the Science of Human History",
         publisher_place="Jena",
         publisher_url="http://www.shh.mpg.de",
@@ -138,6 +145,9 @@ def main(args):
             category=param['Category'],
             section=param['Section'],
             subsection=param['Subsection'],
+            category_ord=index(models.CATEGORIES, param['Category']),
+            section_ord=index(models.SECTIONS, param['Section']),
+            subsection_ord=index(models.SUBSECTIONS, param['Subsection'], default=-1),
     )
     for pid, codes in itertools.groupby(
         sorted(
@@ -206,8 +216,10 @@ def main(args):
                 val['id'],
                 id=val['id'],
                 name=val['value'],
+                description=val['Notes'],
                 valueset=vs,
                 domainelement=data['DomainElement'].get(val['codeReference']),
+                confidence='low' if val['Uncertain'] else 'high',
                 jsondata=dict(color=color),
             )
 

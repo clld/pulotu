@@ -48,6 +48,7 @@ def main(global_config, **settings):
         ('about', functools.partial(menu_item, 'about', label='About')),
         ('languages', functools.partial(menu_item, 'languages', label='Cultures')),
         ('parameters', functools.partial(menu_item, 'parameters', label='Compare Cultures')),
+        ('sources', functools.partial(menu_item, 'sources', label='Sources')),
         ('glossary', functools.partial(menu_item, 'glossary', label='Glossary')),
     )
 

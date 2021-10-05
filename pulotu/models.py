@@ -64,10 +64,10 @@ SUBSECTIONS = [
 ]
 
 
-def valsort(vs):
-    cat = vs.parameter.category
-    sec = vs.parameter.section
-    subsec = vs.parameter.subsection
+def parameter_sort(parameter):
+    cat = parameter.category
+    sec = parameter.section
+    subsec = parameter.subsection
     return (
         CATEGORIES.index(cat) if cat in CATEGORIES else 100,
         SECTIONS.index(sec) if sec in SECTIONS else 100,
@@ -96,7 +96,7 @@ class Variety(CustomModelMixin, common.Language):
         res = collections.OrderedDict()
         lastcat, lastsec = None, None
         for (cat, sec, subsec), vals in itertools.groupby(
-            sorted(self.valuesets, key=valsort),
+            sorted(self.valuesets, key=lambda vs: parameter_sort(vs.parameter)),
             lambda vs: (vs.parameter.category, vs.parameter.section, vs.parameter.subsection)
         ):
             vals = [val for val in vals if not val.parameter.name.endswith('Time Focus')]
@@ -124,3 +124,6 @@ class Feature(CustomModelMixin, common.Parameter):
     category = Column(Unicode)
     section = Column(Unicode)
     subsection = Column(Unicode)
+    category_ord = Column(Integer)
+    section_ord = Column(Integer)
+    subsection_ord = Column(Integer)

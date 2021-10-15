@@ -43,4 +43,14 @@
           <br style="clear: both"/>
 </%block>
 
+<%block name="footer">
+    <div style="text-align: center; font-size: larger">
+        <a href="${req.route_url('legal')}">Legal</a> |
+        <a href="${req.route_url('download')}">Download</a> |
+        <a href="${req.route_url('contact')}">Contact</a> |
+        <a href="https://www.eva.mpg.de/privacy-policy.html">Privacy Policy</a>
+    </div>
+</%block>
+
+
 ${next.body()}

@@ -79,6 +79,7 @@ def parameter_sort(parameter):
 class Variety(CustomModelMixin, common.Language):
     pk = Column(Integer, ForeignKey('language.pk'), primary_key=True)
     glottocode = Column(Unicode)
+    ethonyms = Column(Unicode)
 
     @property
     def contemporary_time_focus(self):
@@ -120,6 +121,7 @@ class Variety(CustomModelMixin, common.Language):
 @implementer(interfaces.IParameter)
 class Feature(CustomModelMixin, common.Parameter):
     pk = Column(Integer, ForeignKey('parameter.pk'), primary_key=True)
+    section_notes = Column(Unicode)
     datatype = Column(Unicode)
     category = Column(Unicode)
     section = Column(Unicode)

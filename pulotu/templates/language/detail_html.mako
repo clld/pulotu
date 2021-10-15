@@ -3,7 +3,7 @@
 <%! active_menu_item = "languages" %>
 <%block name="title">${_('Language')} ${ctx.name}</%block>
 
-<h2>${_('Language')} ${ctx.name}</h2>
+<h2>${ctx.name}</h2>
 
 <div class="well-small well">
     ${ctx.description}
@@ -22,13 +22,22 @@
                         % for j, (subsec, vals) in enumerate(subsecs.items()):
                             <%util:accordion_group eid="acc-${str(i + 1)}-${str(j + 1)}" parent="accordion-${str(i + 1)}" title="${subsec}" open="${False}">
                                 <table class="table table-condensed">
-                                    % for val in vals:
-                                        <tr>
-                                            <td>${h.link(req, val.parameter)}</td>
-                                            <td>${val.values[0].domainelement.description if val.values[0].domainelement else val.values[0].name}</td>
-                                            <td>${h.linked_references(req, val)}</td>
-                                        </tr>
-                                    % endfor
+                                    <thead>
+                                    <tr>
+                                        <th>Question</th>
+                                        <th>Response</th>
+                                        <th>Source</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        % for val in vals:
+                                            <tr>
+                                                <td>${h.link(req, val.parameter)}</td>
+                                                <td>${val.values[0].domainelement.description if val.values[0].domainelement else val.values[0].name}</td>
+                                                <td>${h.linked_references(req, val)}</td>
+                                            </tr>
+                                        % endfor
+                                    </tbody>
                                 </table>
                             </%util:accordion_group>
                         % endfor

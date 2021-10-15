@@ -89,22 +89,26 @@ def index(items, item, default=100):
 
 def main(args):
     data = Data()
-    data.add(
+    ds = data.add(
         common.Dataset,
         pulotu.__name__,
         id=pulotu.__name__,
         domain='pulotu.org',
         name="Pulotu",
         description="Database of Pacific Religions",
-        publisher_name="Max Planck Institute for the Science of Human History",
-        publisher_place="Jena",
-        publisher_url="http://www.shh.mpg.de",
+        publisher_name="Max Planck Institute for Evolutionary Anthropology",
+        publisher_place="Leipzig",
+        publisher_url="http://www.eva.mpg.de",
         license="http://creativecommons.org/licenses/by/4.0/",
         jsondata={
             'license_icon': 'cc-by.png',
             'license_name': 'Creative Commons Attribution 4.0 International License'},
 
     )
+    data.add(common.Contributor, 'sheehan', id='sheehan', name='Oliver Sheehan')
+    data.add(common.Contributor, 'watts', id='watts', name='Joseph Watts')
+    for ord, cid in enumerate(['sheehan', 'watts']):
+        DBSession.add(common.Editor(ord=ord, dataset=ds, contributor=data['Contributor'][cid]))
 
     contrib = data.add(
         common.Contribution,
@@ -124,6 +128,7 @@ def main(args):
             latitude=lang['latitude'],
             longitude=lang['longitude'],
             glottocode=lang['glottocode'],
+            ethonyms='; '.join(lang['Ethonyms']),
             jsondata=dict(ethonyms=lang['Ethonyms'])
         )
 
@@ -141,6 +146,8 @@ def main(args):
             param['id'],
             id=param['id'],
             name=param['name'],
+            description=param['Description'],
+            section_notes=param['Section_Notes'],
             datatype=param['Datatype'],
             category=param['Category'],
             section=param['Section'],
@@ -216,7 +223,7 @@ def main(args):
                 val['id'],
                 id=val['id'],
                 name=val['value'],
-                description=val['Notes'],
+                description=val['Comment'],
                 valueset=vs,
                 domainelement=data['DomainElement'].get(val['codeReference']),
                 confidence='low' if val['Uncertain'] else 'high',

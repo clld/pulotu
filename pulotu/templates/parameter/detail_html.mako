@@ -37,9 +37,12 @@
 
 <h2>${ctx.name}</h2>
 
+% if ctx.section_notes:
+<p class="lead">${ctx.section_notes}</p>
+% endif
 
 % if ctx.description:
-<p>${ctx.description}</p>
+    <p class="lead">${ctx.description}</p>
 % endif
 
 <div style="clear: both"/>

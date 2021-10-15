@@ -1,4 +1,4 @@
-<%inherit file="../home_comp.mako"/>
+<%inherit file="../pulotu.mako"/>
 
 ##<%def name="sidebar()">
 ##    <div class="well">

@@ -28,7 +28,7 @@
 
 <%util:section title="Database Content" level="3" id="db">
     <h4>Cultures</h4>
-    <p>
+    <p class="lead">
         Being expert voyagers, Austronesians settled as far west as Madagascar and as far east as Rapanui - an area
         spanning over half the world’s longitude. The physical environments they inhabited ranged from tiny atolls
         such as Tongareva to the isolated mountainous interiors of large islands such as Taiwan. The social and
@@ -39,7 +39,7 @@
         practice that inspired the first comparative studies of religion (Swain, & Trompf, 1995).
     </p>
     <h4>Variables</h4>
-    <p>
+    <p class="lead">
         Pulotu contains a total of 63 variables of which 17 concern religious belief, 4 religious practice, 10 the
         social environment and 12 the physical environment. This set of variables is divided into three major
         sections, each covering a distinct time period in a cultures history. The first and largest section is the
@@ -49,7 +49,7 @@
         documenting the contemporary state of the culture.
     </p>
     <h4>Further Information</h4>
-    <p>
+    <p class="lead">
         Definitions of the terms used throughout Pulotu can be found in our <a href="/glossary">glossary
         section</a>. For all other enquiries please visit our <a href="/contact">contact page</a>.
     </p>
@@ -58,67 +58,29 @@
 <%util:section title="The Team" level="3" id="team">
     <table class="table">
         <tr style="border:none;">
-            <td style="width:10%;"><img class="img-polaroid"
-                                        src="${req.static_url('pulotu:static/TeamPhotos/RussellGray.jpg')}"></td>
-            <td class="person"> Prof. Russell Gray <br>
-                <div class="personDescription">
-                    <em class="shortDesc">Project Leader, overall coordination.</em>
-                </div>
-            </td>
-            <td style="text-align:right; font-weight:normal;">
-                <a href="http://www.psych.auckland.ac.nz/en/about/our-staff/academic-staff/russell-gray.html"
-                   target="blank">Website</a>
-                <br><a href="mailto:rd.gray@auckland.ac.nz">Email</a>
-            </td>
-            <td><img class="img-polaroid" src="${req.static_url('pulotu:static/TeamPhotos/SimonGreenhill.jpg')}"></td>
-            <td class="person"> Dr. Simon Greenhill <br>
-                <div class="personDescription">
-                    <em class="shortDesc">Associate Investigator, database design</em>
-                </div>
-            </td>
-            <td style="text-align:right; font-weight:normal;">
-                <a href="https://researchers.anu.edu.au/researchers/greenhill-s " target="blank">Website</a>
-                <br><a href="mailto:simon.greenhill@anu.edu.au">Email</a>
-            </td>
+            <th colspan="6"><h4>Chief Editor</h4></th>
         </tr>
-        <tr>
+        <tr style="border:none;">
             <td style="width:10%;"><img class="img-polaroid"
-                                        src="${req.static_url('pulotu:static/TeamPhotos/QuentinAtkinson.jpg')}"></td>
-            <td class="person"> Dr. Quentin Atkinson<br>
+                                        src="${req.static_url('pulotu:static/TeamPhotos/OliverSheehan.jpg')}"></td>
+            <td class="person">Oliver Sheehan<br>
                 <div class="personDescription">
-                    <em class="shortDesc">Associate Investigator, data analysis</em>
+                    <em class="shortDesc">Cultural research and project development</em><br>
+                    Oliver is a graduate researcher who has developed the variables and content of the database and has
+                    been responsible cultural research and reviewing the work of other researchers.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
-                <a href="http://www.fos.auckland.ac.nz/~quentinatkinson/Quentin_Atkinsons_Website/Home.html  "
-                   target="blank">Website</a>
-                <br><a href="mailto:q.atkinson@auckland.ac.nz">Email</a>
+                <a href="mailto:olcsheehan@gmail.com">Email</a>
             </td>
-            <td style="width:10%;"><img class="img-polaroid"
-                                        src="${req.static_url('pulotu:static/TeamPhotos/JosephBulbulia.jpg')}"></td>
-            <td class="person"> Dr. Joseph Bulbulia<br>
-                <div class="personDescription">
-                    <em class="shortDesc">Associate Investigator, religious studies consultant</em>
-                </div>
-            </td>
-            <td style="text-align:right; font-weight:normal;">
-                <a href="http://www.josephbulbulia.com" target="blank">Website</a>
-                <br><a href="mailto:joseph.bulbulia@vuw.ac.nz">Email</a>
-            </td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td style="width:10%;"><img class="img-polaroid"
-                                        src="${req.static_url('pulotu:static/TeamPhotos/CarlosBotero.jpeg')}"></td>
-            <td class="person"> Prof. Carlos Botero<br>
-                <div class="personDescription">
-                    <em class="shortDesc">Associate Investigator, ecological modeling
-                    </em>
-                </div>
-            </td>
-            <td style="text-align:right; font-weight:normal;">
-                <a href="http://cabotero.weebly.com/" target="blank">Website</a>
-                <br><a href="mailto:carlos.botero.p@gmail.com">Email</a>
-            </td>
+        <tr style="border:none;">
+            <th colspan="6"><h4>Leadership and Advisory Team</h4></th>
+        </tr>
+        <tr style="border:none;">
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/JosephWatts.jpg')}"></td>
             <td class="person"> Joseph Watts<br>
@@ -133,20 +95,73 @@
                 <a href="http://www.josephwatts.org" target="blank">Website</a>
                 <br><a href="mailto:me@josephwatts.org">Email</a>
             </td>
-        </tr>
-        <tr>
+
             <td style="width:10%;"><img class="img-polaroid"
-                                        src="${req.static_url('pulotu:static/TeamPhotos/OliverSheehan.jpg')}"></td>
-            <td class="person">Oliver Sheehan<br>
+                                        src="${req.static_url('pulotu:static/TeamPhotos/RussellGray.jpg')}"></td>
+            <td class="person"> Prof. Russell Gray <br>
                 <div class="personDescription">
-                    <em class="shortDesc">Cultural research and project development</em><br>
-                    Oliver is a graduate researcher who has developed the variables and content of the database and has
-                    been responsible cultural research and reviewing the work of other researchers.
+                    <em class="shortDesc">Project Leader, overall coordination.</em>
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
-                <a href="mailto:olcsheehan@gmail.com">Email</a>
+                <a href="http://www.psych.auckland.ac.nz/en/about/our-staff/academic-staff/russell-gray.html"
+                   target="blank">Website</a>
+                <br><a href="mailto:rd.gray@auckland.ac.nz">Email</a>
             </td>
+        </tr>
+        <tr>
+            <td><img class="img-polaroid" src="${req.static_url('pulotu:static/TeamPhotos/SimonGreenhill.jpg')}"></td>
+            <td class="person"> Dr. Simon Greenhill <br>
+                <div class="personDescription">
+                    <em class="shortDesc">Associate Investigator, database design</em>
+                </div>
+            </td>
+            <td style="text-align:right; font-weight:normal;">
+                <a href="https://researchers.anu.edu.au/researchers/greenhill-s " target="blank">Website</a>
+                <br><a href="mailto:simon.greenhill@anu.edu.au">Email</a>
+            </td>
+            <td style="width:10%;"><img class="img-polaroid"
+                                        src="${req.static_url('pulotu:static/TeamPhotos/QuentinAtkinson.jpg')}"></td>
+            <td class="person"> Dr. Quentin Atkinson<br>
+                <div class="personDescription">
+                    <em class="shortDesc">Associate Investigator, data analysis</em>
+                </div>
+            </td>
+            <td style="text-align:right; font-weight:normal;">
+                <a href="http://www.fos.auckland.ac.nz/~quentinatkinson/Quentin_Atkinsons_Website/Home.html  "
+                   target="blank">Website</a>
+                <br><a href="mailto:q.atkinson@auckland.ac.nz">Email</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:10%;"><img class="img-polaroid"
+                                        src="${req.static_url('pulotu:static/TeamPhotos/JosephBulbulia.jpg')}"></td>
+            <td class="person"> Dr. Joseph Bulbulia<br>
+                <div class="personDescription">
+                    <em class="shortDesc">Associate Investigator, religious studies consultant</em>
+                </div>
+            </td>
+            <td style="text-align:right; font-weight:normal;">
+                <a href="http://www.josephbulbulia.com" target="blank">Website</a>
+                <br><a href="mailto:joseph.bulbulia@vuw.ac.nz">Email</a>
+            </td>
+            <td style="width:10%;"><img class="img-polaroid"
+                                        src="${req.static_url('pulotu:static/TeamPhotos/CarlosBotero.jpeg')}"></td>
+            <td class="person"> Prof. Carlos Botero<br>
+                <div class="personDescription">
+                    <em class="shortDesc">Associate Investigator, ecological modeling
+                    </em>
+                </div>
+            </td>
+            <td style="text-align:right; font-weight:normal;">
+                <a href="http://cabotero.weebly.com/" target="blank">Website</a>
+                <br><a href="mailto:carlos.botero.p@gmail.com">Email</a>
+            </td>
+        </tr>
+        <tr style="border:none;">
+            <th colspan="6"><h4>Research Team</h4></th>
+        </tr>
+        <tr>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/StefNg.jpg')}"></td>
             <td class="person">Stephanie Gomes-Ng<br>
@@ -159,8 +174,6 @@
             <td style="text-align:right; font-weight:normal;">
                 <a href="mailto:sng089@aucklanduni.ac.nz">Email</a>
             </td>
-        </tr>
-        <tr>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/Angie.jpg')}"></td>
             <td class="person">Dr. Angeline Song<br>
@@ -173,6 +186,8 @@
             <td style="text-align:right; font-weight:normal;">
                 <a href="mailto:song.angeline@gmail.com">Email</a>
             </td>
+        </tr>
+        <tr>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/JoanneOng.jpg')}"></td>
             <td class="person">Joanne Ong<br>
@@ -185,8 +200,6 @@
             <td style="text-align:right; font-weight:normal;">
                 <a href="mailto:josyinn@gmail.com">Email</a>
             </td>
-        </tr>
-        <tr>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/SamPassmore.jpg')}"></td>
             <td class="person">Sam Passmore<br>
@@ -200,6 +213,8 @@
                 <br>
                 <a href="mailto:passmore.sam@gmail.com">Email</a>
             </td>
+        </tr>
+        <tr>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/KirstyMaurits.jpg')}"></td>
             <td class="person">Kirsty Maurits<br>
@@ -211,8 +226,6 @@
             <td style="text-align:right; font-weight:normal;">
                 <a href="mailto:purringcat@gmail.com">Email</a>
             </td>
-        </tr>
-        <tr>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/GoldieHamilton.jpg')}"></td>
             <td class="person">Goldie Hamilton<br>
@@ -225,6 +238,8 @@
             <td style="text-align:right; font-weight:normal;">
                 <a href="mailto:4goldie@gmail.com">Email</a>
             </td>
+        </tr>
+        <tr class="last">
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/KelseyBuntain.jpg')}"></td>
             <td class="person">Kelsey Buntain<br>
@@ -236,8 +251,6 @@
             <td style="text-align:right; font-weight:normal;">
                 <a href="mailto:kbun706@aucklanduni.ac.nz">Email</a>
             </td>
-        </tr>
-        <tr class="last">
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/AlexanderThomson.jpg')}"></td>
             <td class="person">Alex Thomson<br>
@@ -259,7 +272,7 @@
 
 <%util:section title="Funding and Affiliations" level="3" id="funding">
     <h4>Funding</h4>
-    <p>
+    <p class="lead">
         Pulotu was constructed thanks to funding from the John Templeton Foundation and the Marsden Grant of the
         Royal Society of New Zealand.
     </p>
@@ -283,13 +296,15 @@
     <table class="fundLogos">
         <tr>
             <td>
-                <a href=" http://www.psych.auckland.ac.nz/en/about/our-research/research-groups/language-and-cultural-evolution-group.html" target="_blank">
+                <a href=" http://www.psych.auckland.ac.nz/en/about/our-research/research-groups/language-and-cultural-evolution-group.html"
+                   target="_blank">
                     <img class="uniLogo" src="${req.static_url('pulotu:static/AU.jpg')}">
                 </a>
             </td>
             <td>
                 <a href="http://asiapacific.anu.edu.au" target="_blank">
-                    <img class="uniLogo" src="${req.static_url('pulotu:static/ANU.png')}" style="height:auto; width:300px;">
+                    <img class="uniLogo" src="${req.static_url('pulotu:static/ANU.png')}"
+                         style="height:auto; width:300px;">
                 </a>
             </td>
             <td>
@@ -326,9 +341,10 @@
 </%util:section>
 
 <%util:section title="How to cite" level="3" id="cite">
-    <p>Please read the <a href="/conditionsofuse">conditions of use</a> page before publishing any data from Pulotu.
+    <p class="lead">Please read the <a href="/conditionsofuse">conditions of use</a> page before publishing any data
+        from Pulotu.
     </p>
-    <p>Pulotu can be cited as follows:</p>
+    <p class="lead">Pulotu can be cited as follows:</p>
     <blockquote>
         <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0136783" target="_blank">Watts J.,
             Sheehan O., Greenhill S.J., Gomes-Ng S., Atkinson Q.D., Bulbulia J., Gray R.D. (2015). Pulotu: Database

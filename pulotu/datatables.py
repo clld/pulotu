@@ -1,16 +1,24 @@
 from sqlalchemy.orm import joinedload
 from clld.db.util import get_distinct_values
+from clld.db.models import common
 from clld.web import datatables
 from clld.web.datatables.base import LinkCol, Col, LinkToMapCol
 from clld.web.datatables.parameter import Parameters
+from clld.web.datatables.value import Values
 
 from pulotu import models
 
 
-class Languages(datatables.Languages):
+class Cultures(datatables.Languages):
+    def get_options(self):
+        opts = datatables.Languages.get_options(self)
+        opts['iDisplayLength'] = 150
+        return opts
+
     def col_defs(self):
         return [
             LinkCol(self, 'name'),
+            Col(self, 'ethonyms', model_col=models.Variety.ethonyms),
             Col(self,
                 'latitude',
                 sDescription='<small>The geographic latitude</small>'),
@@ -51,6 +59,19 @@ class Questions(Parameters):
         ]
 
 
+class Responses(Values):
+    def col_defs(self):
+        res = Values.col_defs(self)
+        if self.parameter:
+            res[0].button_text = 'notes'
+            return res + [
+                #Col(self, 'notes', model_col=common.Value.description),
+                Col(self, 'confidence', model_col=common.Value.confidence, choices=get_distinct_values(common.Value.confidence)),
+            ]
+        return res
+
+
 def includeme(config):
-    config.register_datatable('languages', Languages)
+    config.register_datatable('languages', Cultures)
     config.register_datatable('parameters', Questions)
+    config.register_datatable('values', Responses)

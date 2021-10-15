@@ -8,6 +8,17 @@ h2 {
 	color: #321f10;
 }
 
+div.section h3 {
+	font-size: x-large !important;
+	line-height: inherit;
+}
+div.section {
+	padding-bottom: 1em;
+}
+
+div.section h4 {
+}
+
 #initials {
 	width: 100%;
 	text-align: center;

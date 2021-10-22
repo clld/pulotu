@@ -4,7 +4,7 @@ from clld.db.models import common
 from clld.web import datatables
 from clld.web.datatables.base import LinkCol, Col, LinkToMapCol
 from clld.web.datatables.parameter import Parameters
-from clld.web.datatables.value import Values
+from clld.web.datatables.value import Values, ValueNameCol, RefsCol, ValueSetCol
 
 from pulotu import models
 
@@ -59,16 +59,45 @@ class Questions(Parameters):
         ]
 
 
+class ResponseCol(ValueNameCol):
+    def format(self, item):
+        return self.get_attrs(item)['label']
+
+
 class Responses(Values):
     def col_defs(self):
-        res = Values.col_defs(self)
+        name_col = ResponseCol(self, 'value')
+        if self.parameter and self.parameter.domain:
+            name_col.choices = [de.name for de in self.parameter.domain]
+
+        res = []
+
         if self.parameter:
-            res[0].button_text = 'notes'
             return res + [
-                #Col(self, 'notes', model_col=common.Value.description),
-                Col(self, 'confidence', model_col=common.Value.confidence, choices=get_distinct_values(common.Value.confidence)),
+                LinkCol(self,
+                        'language',
+                        model_col=common.Language.name,
+                        get_object=lambda i: i.valueset.language),
+                name_col,
+                RefsCol(self, 'source'),
+                LinkToMapCol(self, 'm', get_object=lambda i: i.valueset.language),
             ]
-        return res
+
+        if self.language:
+            return res + [
+                name_col,
+                LinkCol(self,
+                        'parameter',
+                        sTitle=self.req.translate('Parameter'),
+                        model_col=common.Parameter.name,
+                        get_object=lambda i: i.valueset.parameter),
+                RefsCol(self, 'source'),
+            ]
+
+        return res + [
+            name_col,
+            ValueSetCol(self, 'valueset', bSearchable=False, bSortable=False),
+        ]
 
 
 def includeme(config):

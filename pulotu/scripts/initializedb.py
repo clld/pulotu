@@ -146,7 +146,6 @@ def main(args):
             param['id'],
             id=param['id'],
             name=param['name'],
-            description=param['Description'],
             section_notes=param['Section_Notes'],
             datatype=param['Datatype'],
             category=param['Category'],
@@ -223,10 +222,8 @@ def main(args):
                 val['id'],
                 id=val['id'],
                 name=val['value'],
-                description=val['Comment'],
                 valueset=vs,
                 domainelement=data['DomainElement'].get(val['codeReference']),
-                confidence='low' if val['Uncertain'] else 'high',
                 jsondata=dict(color=color),
             )
 

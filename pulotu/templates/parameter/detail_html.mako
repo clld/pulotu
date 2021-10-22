@@ -35,7 +35,7 @@
 </div>
 
 
-<h2>${ctx.name}</h2>
+<h2 class="question-title">${ctx.name}</h2>
 
 % if ctx.section_notes:
 <p class="lead">${ctx.section_notes}</p>

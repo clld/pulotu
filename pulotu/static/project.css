@@ -1,5 +1,7 @@
 body {
     font-family: FranklinGothicBook, sans-serif;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 h2 {
@@ -7,6 +9,7 @@ h2 {
 	text-transform:uppercase;
 	color: #321f10;
 }
+h2.question-title {text-align: left !important}
 
 div.section h3 {
 	font-size: x-large !important;

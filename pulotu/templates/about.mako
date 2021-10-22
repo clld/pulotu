@@ -63,11 +63,12 @@
         <tr style="border:none;">
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/OliverSheehan.jpg')}"></td>
-            <td class="person">Oliver Sheehan<br>
+            <td class="person">Dr. Oliver Sheehan<br>
                 <div class="personDescription">
-                    <em class="shortDesc">Cultural research and project development</em><br>
-                    Oliver is a graduate researcher who has developed the variables and content of the database and has
-                    been responsible cultural research and reviewing the work of other researchers.
+                    Oliver has played a central role in developing and coding the Pulotu database since its inception. 
+					In recent years Oliver had lead the ongoing development of the Pulotu database and is the current 
+					Chief Editor. Oliver is a postdoctoral researchers in the department of psychology at the 
+					University of Auckland. 
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -83,12 +84,11 @@
         <tr style="border:none;">
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/JosephWatts.jpg')}"></td>
-            <td class="person"> Joseph Watts<br>
+            <td class="person">Dr. Joseph Watts<br>
                 <div class="personDescription">
                     <em class="shortDesc">Project management, database and website design</em><br>
-                    Joseph is a PhD candidate who has been responsible for overseeing the construction and development
-                    of the Pulotu database. He has created the database variables, overseen the cultural research and
-                    designed the website appearance and functions.
+                    Joseph lead the initial design and construction of Pulotu in collaboration with the rest of 
+					the project team.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -103,10 +103,11 @@
                     <em class="shortDesc">Project Leader, overall coordination.</em>
                 </div>
             </td>
+			
             <td style="text-align:right; font-weight:normal;">
                 <a href="http://www.psych.auckland.ac.nz/en/about/our-staff/academic-staff/russell-gray.html"
                    target="blank">Website</a>
-                <br><a href="mailto:rd.gray@auckland.ac.nz">Email</a>
+                <br><a href="mailto:russell_gray@eva.mpg.de">Email</a>
             </td>
         </tr>
         <tr>
@@ -117,18 +118,18 @@
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
-                <a href="https://researchers.anu.edu.au/researchers/greenhill-s " target="blank">Website</a>
-                <br><a href="mailto:simon.greenhill@anu.edu.au">Email</a>
+                <a href="https://simon.net.nz/" target="blank">Website</a>
+                <br><a href="mailto:greenhill@shh.mpg.de">Email</a>
             </td>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/QuentinAtkinson.jpg')}"></td>
-            <td class="person"> Dr. Quentin Atkinson<br>
+            <td class="person"> Prof. Quentin Atkinson<br>
                 <div class="personDescription">
                     <em class="shortDesc">Associate Investigator, data analysis</em>
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
-                <a href="http://www.fos.auckland.ac.nz/~quentinatkinson/Quentin_Atkinsons_Website/Home.html  "
+                <a href="https://www.quentinatkinson.com/"
                    target="blank">Website</a>
                 <br><a href="mailto:q.atkinson@auckland.ac.nz">Email</a>
             </td>
@@ -136,13 +137,13 @@
         <tr>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/JosephBulbulia.jpg')}"></td>
-            <td class="person"> Dr. Joseph Bulbulia<br>
+            <td class="person"> Prof. Joseph Bulbulia<br>
                 <div class="personDescription">
                     <em class="shortDesc">Associate Investigator, religious studies consultant</em>
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
-                <a href="http://www.josephbulbulia.com" target="blank">Website</a>
+                <a href="https://josephbulbulia.netlify.app/" target="blank">Website</a>
                 <br><a href="mailto:joseph.bulbulia@vuw.ac.nz">Email</a>
             </td>
             <td style="width:10%;"><img class="img-polaroid"
@@ -154,7 +155,7 @@
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
-                <a href="http://cabotero.weebly.com/" target="blank">Website</a>
+                <a href="https://biology.wustl.edu/people/carlos-botero" target="blank">Website</a>
                 <br><a href="mailto:carlos.botero.p@gmail.com">Email</a>
             </td>
         </tr>
@@ -164,11 +165,9 @@
         <tr>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/StefNg.jpg')}"></td>
-            <td class="person">Stephanie Gomes-Ng<br>
+            <td class="person">Dr. Stephanie Gomes-Ng<br>
                 <div class="personDescription">
-                    <em class="shortDesc">Cultural research, website and database development</em><br>
-                    Stef is a graduate researcher who has been responsible for constructing the website, developing the
-                    database structure as well as researching cultures.
+                    <em class="shortDesc">Cultural research and database development</em><br>
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -179,8 +178,6 @@
             <td class="person">Dr. Angeline Song<br>
                 <div class="personDescription">
                     <em class="shortDesc">Cultural research</em><br>
-                    Angeline is a postdoctoral cultural researcher who has especially enjoyed researching cultures with
-                    Malay origins as therein lies her own Peranakan (Malay-Chinese) ethnic roots.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -193,8 +190,6 @@
             <td class="person">Joanne Ong<br>
                 <div class="personDescription">
                     <em class="shortDesc">Cultural research</em><br>
-                    Joanne is a postgraduate who has been part of the team responsible for researching cultural
-                    profiles.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -202,10 +197,9 @@
             </td>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/SamPassmore.jpg')}"></td>
-            <td class="person">Sam Passmore<br>
+            <td class="person">Dr Sam Passmore<br>
                 <div class="personDescription">
                     <em class="shortDesc">Cultural research</em><br>
-                    Sam is a post-graduate who has been part of the team responsible for researching cultural profiles.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -220,7 +214,6 @@
             <td class="person">Kirsty Maurits<br>
                 <div class="personDescription">
                     <em class="shortDesc">Cultural research</em><br>
-                    Kirsty is a graduate who has been part of the team responsible for researching cultural profiles.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -231,8 +224,6 @@
             <td class="person">Goldie Hamilton<br>
                 <div class="personDescription">
                     <em class="shortDesc">Cultural research</em><br>
-                    Goldie is a graduate who has helped to develop the warfare variables and been part of the team
-                    responsible for researching cultural profiles.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -245,7 +236,6 @@
             <td class="person">Kelsey Buntain<br>
                 <div class="personDescription">
                     <em class="shortDesc">Cultural research</em><br>
-                    Kelsey is a graduate who has been part of the team responsible for researching cultural profiles.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -256,8 +246,6 @@
             <td class="person">Alex Thomson<br>
                 <div class="personDescription">
                     <em class="shortDesc">Cultural research</em><br>
-                    Alex is a postgraduate researcher who piloted an early version of the database and helped to develop
-                    the variables on syncretism.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -323,7 +311,28 @@
 
 <%util:section title="Publications" level="3" id="pubs">
     <ul class="unstyled">
+	    <li>
+            <blockquote>
+                <a href="http://dx.doi.org/10.1038/s41562-018-0379-3">Watts, J., Sheehan, O., Bulbulia, J., Gray, R.D., 
+				& Atkinson, Q.D. (2018). Christianity spread faster in small politically structured societies. 
+				Nature Human Behaviour, 2, 559-564.</a>
+            </blockquote>
+        </li>
+		<li>
+            <blockquote>
+                <a href="https://doi.org/10.1073/pnas.1714558115">Sheehan, O., Watts, J., Gray, R.D., & Atkinson, Q.D. 
+				(2018). Coevolution of landesque capital intensive agriculture and sociopolitical hierarchy. Proceedings 
+				of the National Academy of Sciences, 115 (14), 3628-3633.</a>
+            </blockquote>
+        </li>
         <li>
+            <blockquote>
+                <a href="http://dx.doi.org/10.1038/nature17159">Watts, J., Sheehan, O., Atkinson, Q.D., Bulbulia, J., 
+				& Gray, R.D. (2016). Ritual human sacrifice promoted and sustained the evolution of stratified 
+				societies. Nature, 532 (7598), 228-231.</a>
+            </blockquote>
+        </li>
+		<li>
             <blockquote>
                 <a href="http://doi.org/10.1098/rspb.2014.2556">Watts J., Greenhill S.J., Atkinson Q.D., Currie T.E.,
                     Bulbulia J., Gray R.D. (2015). Broad supernatural punishment but not moralizing high gods precede

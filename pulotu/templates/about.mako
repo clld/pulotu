@@ -63,20 +63,19 @@
         <tr style="border:none;">
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/OliverSheehan.jpg')}"></td>
-            <td class="person">Dr. Oliver Sheehan<br>
+            <td style="width: 30%;" class="person">Dr. Oliver Sheehan<br>
                 <div class="personDescription">
                     Oliver has played a central role in developing and coding the Pulotu database since its inception. 
-					In recent years Oliver had lead the ongoing development of the Pulotu database and is the current 
-					Chief Editor. Oliver is a postdoctoral researchers in the department of psychology at the 
-					University of Auckland. 
+
+In recent years Oliver had lead the ongoing development of the Pulotu database and is the current Chief Editor. Oliver is a postdoctoral researchers in the department of psychology at the University of Auckland. 
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
                 <a href="mailto:olcsheehan@gmail.com">Email</a>
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td style="width: 10%;"></td>
+            <td style="width: 30%;"></td>
+            <td style="width: 10%;"></td>
         </tr>
         <tr style="border:none;">
             <th colspan="6"><h4>Leadership and Advisory Team</h4></th>
@@ -87,8 +86,7 @@
             <td class="person">Dr. Joseph Watts<br>
                 <div class="personDescription">
                     <em class="shortDesc">Project management, database and website design</em><br>
-                    Joseph lead the initial design and construction of Pulotu in collaboration with the rest of 
-					the project team.
+                    Joseph lead the initial design and construction of Pulotu in collaboration with the rest of the project team.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -103,7 +101,6 @@
                     <em class="shortDesc">Project Leader, overall coordination.</em>
                 </div>
             </td>
-			
             <td style="text-align:right; font-weight:normal;">
                 <a href="http://www.psych.auckland.ac.nz/en/about/our-staff/academic-staff/russell-gray.html"
                    target="blank">Website</a>

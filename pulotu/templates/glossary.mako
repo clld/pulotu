@@ -13,9 +13,19 @@
 
 <table class="table">
     % for initial, items in terms.items():
-        <tr><th id="initial-${initial}">${initial}</th><td> </td></tr>
-            % for term, definition in items:
-                <tr><td>${term}</td><td>${definition}</td></tr>
+        <tr><th id="initial-${initial}">${initial}</th><td> </td> <td> </td></tr>
+            % for term, definition, sources in items:
+                <tr>
+                    <td>${term}</td>
+                    <td>${definition}</td>
+                    <td>
+                        <ul class="unstyled">
+                            % for src in sources:
+                            <li>${h.link(req, src)}</li>
+                            % endfor
+                        </ul>
+                    </td>
+                </tr>
             % endfor
     % endfor
 </table>

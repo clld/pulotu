@@ -11,5 +11,5 @@ def glossary(req, ctx):
         DBSession.query(common.Config).order_by(common.Config.key),
         lambda o: o.key[0],
     ):
-        res[initial] = [(t.key, t.value) for t in terms]
+        res[initial] = [(t.key, t.value, [common.Source.get(sid) for sid in t.jsondata['sources']]) for t in terms]
     return {'terms': res}

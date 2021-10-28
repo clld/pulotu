@@ -12,7 +12,7 @@
     religious belief and practice, with a primary focus on the traditional state of cultures. A major advantage of
     Pulotu is that robust language phylogenies are available for Austronesian cultures. This enables the use of
     phylogenetic comparative methods which provide the ability to reconstruct the states of proto-cultures, account for
-    common ancestry in cross cultural analysis, and test for correlated evolution between traits.
+    common ancestry in cross-cultural analysis, and test for correlated evolution between traits.
 </p>
 
 <div class="well well-small">
@@ -42,7 +42,7 @@
     <p class="lead">
         Pulotu contains a total of 63 variables of which 17 concern religious belief, 4 religious practice, 10 the
         social environment and 12 the physical environment. This set of variables is divided into three major
-        sections, each covering a distinct time period in a cultures history. The first and largest section is the
+        sections, each covering a distinct time period in a culture's history. The first and largest section is the
         traditional state section, which contains information on the state of the culture prior to large-scale
         modernisation. The second section covers the post-contact history, the time period spanning from the
         traditional state of the cultures to their contemporary state. The third section is the contemporary state,
@@ -67,7 +67,8 @@
                 <div class="personDescription">
                     Oliver has played a central role in developing and coding the Pulotu database since its inception. 
 
-In recent years Oliver had lead the ongoing development of the Pulotu database and is the current Chief Editor. Oliver is a postdoctoral researchers in the department of psychology at the University of Auckland. 
+                    In recent years Oliver had lead the ongoing development of the Pulotu database and is the current
+                    Chief Editor. Oliver is a postdoctoral researcher in the department of psychology at the University of Auckland.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
@@ -86,7 +87,7 @@ In recent years Oliver had lead the ongoing development of the Pulotu database a
             <td class="person">Dr. Joseph Watts<br>
                 <div class="personDescription">
                     <em class="shortDesc">Project management, database and website design</em><br>
-                    Joseph lead the initial design and construction of Pulotu in collaboration with the rest of the project team.
+                    Joseph led the initial design and construction of Pulotu in collaboration with the rest of the project team.
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">

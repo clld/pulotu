@@ -14,11 +14,14 @@
 <div class="span8" style="text-align: center; padding-top: 1em" id="title-page">
     <img src="static/HeadLarge.jpg" width="30%"/>
 
-    <h2>PULOTU</h2>
-    <h3>Database of Pacific Religions</h3>
+    <h2>${req.dataset.name.upper()}</h2>
+    <h3>${req.dataset.description}</h3>
 
     <p class="lead">
-        Pulotu, meaning abode of the gods, is a database of Austronesian religious beliefs and practices. You will find information on 137 cultures from the Moken of mainland Asia to the Maori of New Zealand.
+        Pulotu, meaning abode of the gods, is a database of Austronesian religious beliefs and practices.
+        You will find information on
+        ${ncultures} cultures
+        from the Moken of mainland Asia to the Māori of New Zealand.
     </p>
 
     <p>

@@ -18,9 +18,9 @@
 <div class="well well-small">
     <ul>
         <li><a href="#db">Database Content</a></li>
+        <li><a href="#pubs">Publications</a></li>
         <li><a href="#team">The Team</a></li>
         <li><a href="#funding">Funding and Affiliations</a></li>
-        <li><a href="#pubs">Publications</a></li>
         <li><a href="#cite">How to cite</a></li>
     </ul>
 </div>
@@ -53,6 +53,46 @@
         Definitions of the terms used throughout Pulotu can be found in our <a href="/glossary">glossary
         section</a>. For all other enquiries please visit our <a href="/contact">contact page</a>.
     </p>
+</%util:section>
+
+<%util:section title="Publications" level="3" id="pubs">
+    <ul class="unstyled">
+        <li>
+            <blockquote class="lead">
+                <a href="http://dx.doi.org/10.1038/s41562-018-0379-3">Watts, J., Sheehan, O., Bulbulia, J., Gray, R.D.,
+                    & Atkinson, Q.D. (2018). Christianity spread faster in small politically structured societies.
+                    Nature Human Behaviour, 2, 559-564.</a>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="lead">
+                <a href="https://doi.org/10.1073/pnas.1714558115">Sheehan, O., Watts, J., Gray, R.D., & Atkinson, Q.D.
+                    (2018). Coevolution of landesque capital intensive agriculture and sociopolitical hierarchy. Proceedings
+                    of the National Academy of Sciences, 115 (14), 3628-3633.</a>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="lead">
+                <a href="http://dx.doi.org/10.1038/nature17159">Watts, J., Sheehan, O., Atkinson, Q.D., Bulbulia, J.,
+                    & Gray, R.D. (2016). Ritual human sacrifice promoted and sustained the evolution of stratified
+                    societies. Nature, 532 (7598), 228-231.</a>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="lead">
+                <a href="http://doi.org/10.1098/rspb.2014.2556">Watts J., Greenhill S.J., Atkinson Q.D., Currie T.E.,
+                    Bulbulia J., Gray R.D. (2015). Broad supernatural punishment but not moralizing high gods precede
+                    the evolution of political complexity in Austronesia. Proceedings of the Royal Society B., 282.</a>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="lead">
+                <a href="http://doi.org/10.1371/journal.pone.0136783"> Watts J., Sheehan O., Greenhill S.J., Gomes-Ng
+                    S., Atkinson Q.D., Bulbulia J., Gray R.D. (2015). Pulotu: Database of Austronesian Supernatural
+                    Beliefs and Practices. PLoS ONE 10(9)</a>
+            </blockquote>
+        </li>
+    </ul>
 </%util:section>
 
 <%util:section title="The Team" level="3" id="team">
@@ -307,52 +347,12 @@
     </table>
 </%util:section>
 
-<%util:section title="Publications" level="3" id="pubs">
-    <ul class="unstyled">
-	    <li>
-            <blockquote>
-                <a href="http://dx.doi.org/10.1038/s41562-018-0379-3">Watts, J., Sheehan, O., Bulbulia, J., Gray, R.D., 
-				& Atkinson, Q.D. (2018). Christianity spread faster in small politically structured societies. 
-				Nature Human Behaviour, 2, 559-564.</a>
-            </blockquote>
-        </li>
-		<li>
-            <blockquote>
-                <a href="https://doi.org/10.1073/pnas.1714558115">Sheehan, O., Watts, J., Gray, R.D., & Atkinson, Q.D. 
-				(2018). Coevolution of landesque capital intensive agriculture and sociopolitical hierarchy. Proceedings 
-				of the National Academy of Sciences, 115 (14), 3628-3633.</a>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote>
-                <a href="http://dx.doi.org/10.1038/nature17159">Watts, J., Sheehan, O., Atkinson, Q.D., Bulbulia, J., 
-				& Gray, R.D. (2016). Ritual human sacrifice promoted and sustained the evolution of stratified 
-				societies. Nature, 532 (7598), 228-231.</a>
-            </blockquote>
-        </li>
-		<li>
-            <blockquote>
-                <a href="http://doi.org/10.1098/rspb.2014.2556">Watts J., Greenhill S.J., Atkinson Q.D., Currie T.E.,
-                    Bulbulia J., Gray R.D. (2015). Broad supernatural punishment but not moralizing high gods precede
-                    the evolution of political complexity in Austronesia. Proceedings of the Royal Society B., 282.</a>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote>
-                <a href="http://doi.org/10.1371/journal.pone.0136783"> Watts J., Sheehan O., Greenhill S.J., Gomes-Ng
-                    S., Atkinson Q.D., Bulbulia J., Gray R.D. (2015). Pulotu: Database of Austronesian Supernatural
-                    Beliefs and Practices. PLoS ONE 10(9)</a>
-            </blockquote>
-        </li>
-    </ul>
-</%util:section>
-
 <%util:section title="How to cite" level="3" id="cite">
     <p class="lead">Please read the <a href="/conditionsofuse">conditions of use</a> page before publishing any data
         from Pulotu.
     </p>
     <p class="lead">Pulotu can be cited as follows:</p>
-    <blockquote>
+    <blockquote class="lead">
         <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0136783" target="_blank">Watts J.,
             Sheehan O., Greenhill S.J., Gomes-Ng S., Atkinson Q.D., Bulbulia J., Gray R.D. (2015). Pulotu: Database
             of Austronesian Supernatural Beliefs and Practices. PLoS ONE 10(9).</a>

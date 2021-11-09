@@ -5,6 +5,7 @@ from clld.web import datatables
 from clld.web.datatables.base import LinkCol, Col, LinkToMapCol
 from clld.web.datatables.parameter import Parameters
 from clld.web.datatables.value import Values, ValueNameCol, RefsCol, ValueSetCol
+from clldutils.misc import dict_merged, slug
 
 from pulotu import models
 
@@ -45,6 +46,21 @@ class SubsectionCol(Col):
 
 
 class Questions(Parameters):
+    def __init__(self, req, model, **kw):
+        self.focus = kw.pop('focus', req.params.get('focus', None))
+        if self.focus:
+            kw['eid'] = 'dt-parameters-' + slug(self.focus)
+        super(Questions, self).__init__(req, model, **kw)
+
+
+    def xhr_query(self):
+        return dict_merged(super(Questions, self).xhr_query(), focus=self.focus)
+
+    def base_query(self, query):
+        if self.focus:
+            query = query.filter(models.Feature.category == self.focus)
+        return query
+
     def get_options(self):
         opts = super(Questions, self).get_options()
         opts['aaSorting'] = [[0, 'asc'], [1, 'asc'], [2, 'asc']]
@@ -52,7 +68,7 @@ class Questions(Parameters):
 
     def col_defs(self):
         return [
-            CategoryCol(self, 'category', model_col=models.Feature.category, choices=get_distinct_values(models.Feature.category)),
+            #CategoryCol(self, 'category', model_col=models.Feature.category, choices=get_distinct_values(models.Feature.category)),
             SectionCol(self, 'section', model_col=models.Feature.section, choices=get_distinct_values(models.Feature.section)),
             SubsectionCol(self, 'subsection', model_col=models.Feature.subsection),
             LinkCol(self, 'name'),

@@ -6,6 +6,7 @@ from sqlalchemy.orm import joinedload
 from pycldf import Sources
 from clldutils.misc import nfilter
 from clldutils.color import qualitative_colors
+from clldutils.text import strip_brackets
 from clld.cliutil import Data, bibtex2source
 from clld.db.meta import DBSession
 from clld.db.models import common
@@ -88,14 +89,15 @@ def index(items, item, default=100):
 
 
 def main(args):
+    abbr, title = args.cldf.properties['dc:title'].split(': ')
     data = Data()
     ds = data.add(
         common.Dataset,
         pulotu.__name__,
         id=pulotu.__name__,
         domain='pulotu.org',
-        name="Pulotu",
-        description="Database of Pacific Religions",
+        name=abbr,
+        description=title,
         publisher_name="Max Planck Institute for Evolutionary Anthropology",
         publisher_place="Leipzig",
         publisher_url="http://www.eva.mpg.de",
@@ -152,7 +154,7 @@ def main(args):
             section_notes=param['Section_Notes'],
             datatype=param['Datatype'],
             category=param['Category'],
-            section=param['Section'],
+            section=strip_brackets(param['Section']),
             subsection=param['Subsection'],
             category_ord=index(models.CATEGORIES, param['Category']),
             section_ord=index(models.SECTIONS, param['Section']),

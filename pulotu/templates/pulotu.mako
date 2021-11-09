@@ -35,9 +35,9 @@
       <div id="header">
 		<img class="logo" src="${req.static_url('pulotu:static/HeadLogo.jpg')}" width="50" />
 		<div class="logo">
-		    <div class="logo-title">Pulotu</div>
+		    <div class="logo-title">${req.dataset.name}</div>
             <br/>
-		    <div class="logo-text">Database of Pacific Religions</div>
+		    <div class="logo-text">${req.dataset.description}</div>
 		</div>
       </div>
           <br style="clear: both"/>

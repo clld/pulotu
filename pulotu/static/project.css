@@ -65,14 +65,14 @@ img.uniLogo {
 	text-transform:uppercase;
 	margin-top:0;
 	color: #321f10;
-	letter-spacing:8.5px;
+	letter-spacing:15px;
 	font-size:50px !important;
 }
 
 .logo-text, h3 {
 text-transform:uppercase;
 	font-family:BerlinSansDemi, sans-serif !important;
-	font-size:15px;
+	font-size:14px;
 	letter-spacing:0px;
 	color: #757575;
 	line-height:5px;
@@ -104,17 +104,17 @@ div.span12 h2 {
 	font-family: BerlinSansDemi, sans-serif;
 	font-size:75px !important;
 	text-align:center;
-	letter-spacing:25px;
+	letter-spacing:30.5px;
 	line-height:normal;
 }
 #title-page h3 {
-	font-size:23px !important;
+	font-size:21px !important;
 	text-transform:uppercase;
 	font-family:BerlinSansDemi, sans-serif;
 	color:#757575;
-	letter-spacing:1.5px;
+	letter-spacing:1.0px;
 	margin-top:5px;
-	margin-left:-23px;
+	margin-left:-28px;
 }
 #title-page p.lead {
 	margin-top: 20px !important;

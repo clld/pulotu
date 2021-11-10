@@ -6,15 +6,15 @@
 <div class="alert alert-info">
     <p class="lead">
         The Pulotu web application serves the latest
-        ${h.external_link('https://github.com/D-PLACE/pulotu/releases', label='released version')}
+        ${h.external_link('https://github.com/D-PLACE/dplace-dataset-pulotu/releases', label='released version')}
         of data curated at
-        ${h.external_link('https://github.com/D-PLACE/pulotu', label='D-PLACE/pulotu')}.
+        ${h.external_link('https://github.com/D-PLACE/dplace-dataset-pulotu', label='D-PLACE/dplace-dataset-pulotu')}.
 
-        ##Older released version are accessible via <br/>
-        ##<a href="https://doi.org/10.5281/zenodo.3606197"><img
-        ##        src="https://zenodo.org/badge/DOI/10.5281/zenodo.3606197.svg" alt="DOI"></a>
-        ##<br/>
-        ##on ZENODO as well.
+        Released versions are accessible via <br/>
+        <a href="https://doi.org/10.5281/zenodo.3606197"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.3606197.svg" alt="DOI"></a>
+        <br/>
+        on ZENODO as well.
     </p>
     <p class="lead">
         The Pulotu dataset is distributed under a

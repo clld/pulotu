@@ -235,7 +235,7 @@
             </td>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/SamPassmore.jpg')}"></td>
-            <td class="person">Dr Sam Passmore<br>
+            <td class="person">Dr. Sam Passmore<br>
                 <div class="personDescription">
                     <em class="shortDesc">Cultural research</em><br>
                 </div>

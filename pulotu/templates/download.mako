@@ -3,7 +3,7 @@
 
 <h2>Downloads</h2>
 
-<div class="alert alert-info">
+<div class="alert alert-success">
     <p class="lead">
         The Pulotu web application serves the latest
         ${h.external_link('https://github.com/D-PLACE/dplace-dataset-pulotu/releases', label='released version')}
@@ -12,7 +12,7 @@
 
         Released versions are accessible via <br/>
         <a href="https://doi.org/10.5281/zenodo.5669235"><img
-                src="https://zenodo.org/badge/DOI/10.5281/zenodo.5669235.svg" alt="DOI"></a>
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.5669235.svg" alt="DOI: 10.5281/zenodo.5669235"></a>
         <br/>
         on ZENODO as well.
     </p>

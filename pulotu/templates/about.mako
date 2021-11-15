@@ -40,7 +40,7 @@
     </p>
     <h4>Variables</h4>
     <p class="lead">
-        Pulotu contains a total of <a href="${req.route_url('parameters')}">83 variables</a>, divided into three major
+        Pulotu contains a total of <a href="${req.route_url('parameters')}">${count_vars} variables</a>, divided into three major
         sections, each covering a distinct time period in a culture's history. The first and largest section is the
         <a href="${req.route_url('parameters', _anchor='ttrad')}">traditional state section</a>, which contains
         information on the state of the culture prior to large-scale

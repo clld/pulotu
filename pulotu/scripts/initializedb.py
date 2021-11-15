@@ -137,6 +137,17 @@ def main(args):
     for rec in bibtex.Database.from_file(args.cldf.bibpath, lowercase=True):
         data.add(common.Source, rec.id, _obj=bibtex2source(rec))
 
+    data.add(common.Source, 'swainandtrompf1995', _obj=bibtex2source(bibtex.Record.from_string("""\
+@Book{swainandtrompf1995,
+author = {Swain, Tony and Trompf, G. W.},
+title = {The religions of Oceania},
+publisher = {Routledge},
+address = {London ; New York},
+pages = {244 p.},
+year = {1995}
+}
+""")))
+
     refs = collections.defaultdict(list)
 
     for row in args.cldf.iter_rows('glossary.csv', 'id', 'name', 'description', 'source'):

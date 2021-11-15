@@ -36,16 +36,17 @@
         bands to large, complex states. Supernatural beliefs systems included localised nature spirits and the
         spirits of recent ancestors, as well as structured pantheons of powerful gods. Supernatural practices
         include ritual dances, human sacrifice and headhunting. It was this diversity of religious belief and
-        practice that inspired the first comparative studies of religion (Swain, & Trompf, 1995).
+        practice that inspired the first comparative studies of religion (${h.link(req, swainandtrompf1995)}).
     </p>
     <h4>Variables</h4>
     <p class="lead">
-        Pulotu contains a total of 63 variables of which 17 concern religious belief, 4 religious practice, 10 the
-        social environment and 12 the physical environment. This set of variables is divided into three major
+        Pulotu contains a total of <a href="${req.route_url('parameters')}">83 variables</a>, divided into three major
         sections, each covering a distinct time period in a culture's history. The first and largest section is the
-        traditional state section, which contains information on the state of the culture prior to large-scale
-        modernisation. The second section covers the post-contact history, the time period spanning from the
-        traditional state of the cultures to their contemporary state. The third section is the contemporary state,
+        <a href="${req.route_url('parameters', _anchor='ttrad')}">traditional state section</a>, which contains
+        information on the state of the culture prior to large-scale
+        modernisation. The second section covers the <a href="${req.route_url('parameters', _anchor='tpost')}">post-contact history</a>,
+        the time period spanning from the traditional state of the cultures to their contemporary state.
+        The third section is the <a href="${req.route_url('parameters', _anchor='tcurr')}">contemporary state</a>,
         documenting the contemporary state of the culture.
     </p>
     <h4>Further Information</h4>

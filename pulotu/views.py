@@ -13,3 +13,10 @@ def glossary(req, ctx):
     ):
         res[initial] = [(t.key, t.value, [common.Source.get(sid) for sid in t.jsondata['sources']]) for t in terms]
     return {'terms': res}
+
+
+def about(req, ctx):
+    return {
+        'swainandtrompf1995': common.Source.get('swainandtrompf1995'),
+        'count_vars': DBSession.query(common.Parameter).count(),
+    }

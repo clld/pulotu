@@ -194,7 +194,7 @@ year = {1995}
         sorted(
             args.cldf.iter_rows(
                 'ValueTable',
-                'id', 'value', 'languageReference', 'parameterReference', 'codeReference', 'source'),
+                'id', 'value', 'languageReference', 'parameterReference', 'codeReference', 'source', 'comment'),
             key=lambda r: r['parameterReference']),
         lambda r: r['parameterReference'],
     ):
@@ -239,6 +239,7 @@ year = {1995}
                 id=val['id'],
                 name=val['value'],
                 valueset=vs,
+                description=val['comment'],
                 domainelement=data['DomainElement'].get(val['codeReference']),
                 jsondata=dict(color=color),
             )

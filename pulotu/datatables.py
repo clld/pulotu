@@ -2,7 +2,7 @@ from sqlalchemy.orm import joinedload
 from clld.db.util import get_distinct_values
 from clld.db.models import common
 from clld.web import datatables
-from clld.web.datatables.base import LinkCol, Col, LinkToMapCol
+from clld.web.datatables.base import LinkCol, Col, LinkToMapCol, DetailsRowLinkCol
 from clld.web.datatables.parameter import Parameters
 from clld.web.datatables.value import Values, ValueNameCol, RefsCol, ValueSetCol
 from clldutils.misc import dict_merged, slug
@@ -89,7 +89,7 @@ class Responses(Values):
         res = []
 
         if self.parameter:
-            return res + [
+            res = res + [
                 LinkCol(self,
                         'language',
                         model_col=common.Language.name,
@@ -98,6 +98,9 @@ class Responses(Values):
                 RefsCol(self, 'source'),
                 LinkToMapCol(self, 'm', get_object=lambda i: i.valueset.language),
             ]
+            if self.parameter.id in ['84', '85', '86']:
+                res.append(DetailsRowLinkCol(self, 'comment', button_text='comment'))
+            return res
 
         if self.language:
             return res + [

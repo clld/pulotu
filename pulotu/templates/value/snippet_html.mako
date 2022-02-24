@@ -2,7 +2,7 @@
 <%namespace name="util" file="../util.mako"/>
 
 % if ctx.description:
-<p>${ctx.description}</p>
+${h.text2html(ctx.description)|n}
 % endif
 
 % if ctx.confidence:

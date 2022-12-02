@@ -144,7 +144,7 @@
                 </div>
             </td>
             <td style="text-align:right; font-weight:normal;">
-                <a href="http://www.psych.auckland.ac.nz/en/about/our-staff/academic-staff/russell-gray.html"
+                <a href="https://profiles.auckland.ac.nz/rd-gray"
                    target="blank">Website</a>
                 <br><a href="mailto:russell_gray@eva.mpg.de">Email</a>
             </td>
@@ -158,7 +158,6 @@
             </td>
             <td style="text-align:right; font-weight:normal;">
                 <a href="https://simon.net.nz/" target="blank">Website</a>
-                <br><a href="mailto:greenhill@shh.mpg.de">Email</a>
             </td>
             <td style="width:10%;"><img class="img-polaroid"
                                         src="${req.static_url('pulotu:static/TeamPhotos/QuentinAtkinson.jpg')}"></td>
@@ -335,7 +334,7 @@
                 </a>
             </td>
             <td>
-                <a href="http://www.shh.mpg.de/en" target="_blank">
+                <a href="http://www.eva.mpg.de/" target="_blank">
                     <img style="height:140px;" class="uniLogo" src="${req.static_url('pulotu:static/MP.png')}">
                 </a>
             </td>

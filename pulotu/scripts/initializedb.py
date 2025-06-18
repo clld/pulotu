@@ -100,7 +100,7 @@ def main(args):
         description=title,
         publisher_name="Max Planck Institute for Evolutionary Anthropology",
         publisher_place="Leipzig",
-        publisher_url="http://www.eva.mpg.de",
+        publisher_url="https://www.eva.mpg.de",
         license="http://creativecommons.org/licenses/by/4.0/",
         jsondata={
             'license_icon': 'cc-by.png',
@@ -130,7 +130,7 @@ def main(args):
             latitude=lang['latitude'],
             longitude=lang['longitude'],
             glottocode=lang['glottocode'],
-            ethonyms='; '.join(lang['Ethonyms']),
+            ethonyms='; '.join(lang['Ethonyms']),  # alt_names_by_society
             jsondata=dict(ethonyms=lang['Ethonyms'])
         )
 

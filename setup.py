@@ -19,7 +19,9 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'clld>=9.2.2',
+        'clldutils>=4.0',
+        'clldmpg>=4.4.0',
+        'clld>=11.5',
         'colorcet',
         'clldmpg',
 

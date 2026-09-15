@@ -348,9 +348,6 @@
 </%util:section>
 
 <%util:section title="How to cite" level="3" id="cite">
-    <p class="lead">Please read the <a href="/conditionsofuse">conditions of use</a> page before publishing any data
-        from Pulotu.
-    </p>
     <p class="lead">Pulotu can be cited as follows:</p>
     <blockquote class="lead">
         <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0136783" target="_blank">Watts J.,

@@ -24,6 +24,7 @@ setup(
         'clld>=11.5',
         'colorcet',
         'clldmpg',
+        'pycldf',
         'psycopg2',
 ],
 extras_require={

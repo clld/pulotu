@@ -20,7 +20,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'clldutils>=4.0',
-        'clldmpg>=4.4.0',
+        'clldmpg>=4.5.0',
         'clld>=11.5',
         'colorcet',
         'clldmpg',
